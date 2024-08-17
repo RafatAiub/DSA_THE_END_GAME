@@ -25,3 +25,12 @@ const palindrome = (str) => str.split("").reverse().join("") === str;
 //arrow function test
 console.log(palindrome("rafat")); // return false
 console.log(palindrome("1234321")); // return true
+
+// now reverse integer
+
+const reverseNumber = (num) => {
+  const reversed = num.toString().split("").reverse().join("");
+  return parseInt(reversed) * Math.sign(num);
+};
+
+console.log(reverseNumber(-8516184651)); // reverse the number 
